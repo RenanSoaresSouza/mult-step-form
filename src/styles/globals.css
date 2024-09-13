@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Ubuntu;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#step-form {
+  background-image: url('./../pages/assets/images/bg-sidebar-desktop.svg');
+  background-repeat: no-repeat;
+  
+}
+#stepform-phone {
+  background-image: url('./../pages/assets/images/bg-sidebar-mobile.svg');
+  background-repeat: no-repeat;
+}
+@font-face{
+  font-family: Ubuntu;
+
+  /*Caso a fonte esteja na mesma pasta*/
+  src: url("./../pages/assets/fonts/Ubuntu-Regular.ttf");
+}
