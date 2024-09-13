@@ -9,8 +9,12 @@ function Input({type,name,placeholder,setVariable,variable}){
         if (variable.length == 0 && Change.current == true) {
             setIsempty(true);
         }
-        else if (type == 'email' && variable.indexOf('@') == -1 && variable.indexOf('.') == -1){
-            alert('email inválido')
+        else if (type == 'email'){
+            if ( (variable.indexOf('@') == -1) && (variable.indexOf('.') == -1)){
+                alert(variable.indexOf('.'))
+                alert('email inválido')
+            }
+            
         }
         else {
             setIsempty(false);
