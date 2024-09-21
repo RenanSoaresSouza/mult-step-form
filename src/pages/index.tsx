@@ -2,6 +2,7 @@ import InfoForm from "./components/Info_Pessoal";
 
 
 export default function Home() {
+  //teste
   return (
     <main className="bg-blue-300 w-full h-screen flex flex-col  justify-center items-center">
       <div id="stepform-phone" className="w-full h-2/6 z-0 absolute top-0 bg-cover lg:hidden justify-center flex items-start">        
